@@ -1,0 +1,6 @@
+{
+  "name": "JMH Tea Point",
+  "description": "Luxe botanical tea curation and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

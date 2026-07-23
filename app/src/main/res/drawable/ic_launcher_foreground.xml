@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Steam / Tea Leaves Accent -->
+    <path
+        android:fillColor="#F7D070"
+        android:pathData="M54,25 C50,32 54,38 54,41 C54,38 58,32 54,25 Z" />
+    <path
+        android:fillColor="#E2B13C"
+        android:pathData="M46,29 C43,34 47,39 47,42 C46,38 42,34 46,29 Z" />
+    <path
+        android:fillColor="#E2B13C"
+        android:pathData="M62,29 C65,34 61,39 61,42 C62,38 66,34 62,29 Z" />
+
+    <!-- Tea Cup Main Body -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M33,46 H75 V64 C75,73 66,80 54,80 C42,80 33,73 33,64 Z" />
+
+    <!-- Cup Handle -->
+    <path
+        android:fillColor="#E2B13C"
+        android:pathData="M75,51 H80 C84,51 86,54 86,58 C86,62 84,65 80,65 H75 V60 H80 C81,60 82,59 82,58 C82,57 81,56 80,56 H75 Z" />
+
+    <!-- Cup Rim Highlight -->
+    <path
+        android:fillColor="#FFF0AA"
+        android:pathData="M31,44 H77 V47 H31 Z" />
+
+    <!-- Cup Saucer Base -->
+    <path
+        android:fillColor="#C8961E"
+        android:pathData="M36,83 H72 C74,83 75,84 75,85 C75,86 74,87 72,87 H36 C34,87 33,86 33,85 C33,84 34,83 36,83 Z" />
+</vector>
