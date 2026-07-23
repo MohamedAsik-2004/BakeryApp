@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.automirrored.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -196,7 +197,7 @@ fun ProductsScreen(
                                     contentAlignment = Alignment.Center
                                 ) {
                                     Icon(
-                                        imageVector = Icons.Default.TrendingUp,
+                                        imageVector = Icons.AutoMirrored.Filled.TrendingUp,
                                         contentDescription = "Trending",
                                         tint = GoldLeaf,
                                         modifier = Modifier.size(24.dp)
@@ -300,7 +301,7 @@ fun ProductsScreen(
                                 )
                         ) {
                             Icon(
-                                imageVector = if (isGridView) Icons.Default.List else Icons.Default.GridView,
+                                imageVector = if (isGridView) Icons.AutoMirrored.Filled.List else Icons.Default.GridView,
                                 contentDescription = "Toggle Grid",
                                 tint = ForestGreen
                             )

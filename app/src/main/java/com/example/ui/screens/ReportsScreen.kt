@@ -13,6 +13,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.*
+import androidx.compose.material.icons.automirrored.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -266,7 +267,7 @@ fun ReportsScreen(
                                         .background(WarmGray, RoundedCornerShape(10.dp)),
                                     contentAlignment = Alignment.Center
                                 ) {
-                                    Icon(Icons.Default.ReceiptLong, "Invoice", tint = ForestGreen, modifier = Modifier.size(18.dp))
+                                    Icon(Icons.AutoMirrored.Filled.ReceiptLong, "Invoice", tint = ForestGreen, modifier = Modifier.size(18.dp))
                                 }
                                 Box(
                                     modifier = Modifier

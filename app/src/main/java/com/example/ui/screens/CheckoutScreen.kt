@@ -14,6 +14,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.*
+import androidx.compose.material.icons.automirrored.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -104,7 +105,7 @@ fun CheckoutScreen(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     IconButton(onClick = onBack) {
-                        Icon(Icons.Default.ArrowBack, "Back", tint = ForestGreen)
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, "Back", tint = ForestGreen)
                     }
                     Text(
                         text = "Checkout",
@@ -291,7 +292,7 @@ fun CheckoutScreen(
                         }
 
                         Spacer(modifier = Modifier.height(14.dp))
-                        Divider(color = OliveBorder.copy(alpha = 0.2f))
+                        HorizontalDivider(color = OliveBorder.copy(alpha = 0.2f))
                         Spacer(modifier = Modifier.height(14.dp))
 
                         // Total line
@@ -346,11 +347,11 @@ fun CheckoutScreen(
                             onClick = { showInvoiceDialog = true },
                             shape = RoundedCornerShape(24.dp),
                             colors = ButtonDefaults.outlinedButtonColors(contentColor = ForestGreen),
-                            border = ButtonDefaults.outlinedButtonBorder.copy(brush = androidx.compose.ui.graphics.SolidColor(GoldLeaf)),
+                            border = androidx.compose.foundation.BorderStroke(1.dp, GoldLeaf),
                             modifier = Modifier.fillMaxWidth(),
                             contentPadding = PaddingValues(vertical = 16.dp)
                         ) {
-                            Icon(Icons.Default.ReceiptLong, "Invoice")
+                            Icon(Icons.AutoMirrored.Filled.ReceiptLong, "Invoice")
                             Spacer(modifier = Modifier.width(8.dp))
                             Text("Generate Invoice", fontWeight = FontWeight.Bold)
                         }
@@ -488,7 +489,7 @@ fun CheckoutScreen(
                         }
 
                         Spacer(modifier = Modifier.height(12.dp))
-                        Divider(color = OliveBorder.copy(alpha = 0.3f))
+                        HorizontalDivider(color = OliveBorder.copy(alpha = 0.3f))
                         Spacer(modifier = Modifier.height(12.dp))
 
                         // Meta details
@@ -508,7 +509,7 @@ fun CheckoutScreen(
                         }
 
                         Spacer(modifier = Modifier.height(12.dp))
-                        Divider(color = OliveBorder.copy(alpha = 0.3f))
+                        HorizontalDivider(color = OliveBorder.copy(alpha = 0.3f))
                         Spacer(modifier = Modifier.height(12.dp))
 
                         // Items List Header
@@ -554,7 +555,7 @@ fun CheckoutScreen(
                         }
 
                         Spacer(modifier = Modifier.height(12.dp))
-                        Divider(color = OliveBorder.copy(alpha = 0.3f))
+                        HorizontalDivider(color = OliveBorder.copy(alpha = 0.3f))
                         Spacer(modifier = Modifier.height(12.dp))
 
                         // Totals section
